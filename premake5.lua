@@ -18,6 +18,9 @@ project "MixelEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "mxpch.h"
+	pchsource "MixelEngine/src/mxpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

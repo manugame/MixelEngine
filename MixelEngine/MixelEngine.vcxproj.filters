@@ -34,6 +34,7 @@
     <ClInclude Include="src\Mixel\Log.h">
       <Filter>Mixel</Filter>
     </ClInclude>
+    <ClInclude Include="src\mxpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Mixel\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Mixel\Log.cpp">
       <Filter>Mixel</Filter>
     </ClCompile>
+    <ClCompile Include="src\mxpch.cpp" />
   </ItemGroup>
 </Project>

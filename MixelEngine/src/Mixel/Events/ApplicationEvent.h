@@ -1,8 +1,6 @@
 #pragma once
 #include "Event.h"
 
-#include <sstream>
-
 namespace Mixel
 {
 	class MIXEL_API WindowResizeEvent : public Event
