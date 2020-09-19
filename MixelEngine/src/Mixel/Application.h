@@ -14,9 +14,12 @@ namespace Mixel
 		virtual ~Application();
 
 		void Run();
-	private:
-		std::unique_ptr<Window> m_Window;
 
+		void OnEvent(Event& event);
+	private:
+		bool OnWindowClosed(WindowCloseEvent& e);
+		
+		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};
 	
