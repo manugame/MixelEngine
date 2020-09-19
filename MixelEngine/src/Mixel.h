@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Mixel/Application.h"
+#include "Mixel/Log.h"
 
 // -- Entry Point----------------------
 

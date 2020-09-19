@@ -2,6 +2,10 @@
 
 #include <iostream>
 
+#include "Log.h"
+#include "Mixel/Events/ApplicationEvent.h"
+
+
 
 namespace Mixel
 {
@@ -18,6 +22,10 @@ namespace Mixel
 
 	void Application::Run()
 	{
+
+		WindowResizeEvent event(1280, 720);
+		MX_TRACE(event);
+		
 		while (true);
 	}
 

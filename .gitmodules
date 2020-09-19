@@ -1,0 +1,3 @@
+[submodule "MixelEngine/vendor/spdlog"]
+	path = MixelEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git

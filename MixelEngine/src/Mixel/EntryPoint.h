@@ -8,7 +8,12 @@
 extern Mixel::Application* Mixel::CreateApplication();
 
 int main(int argc, char** argv)
-{	auto app = Mixel::CreateApplication();
+{
+	Mixel::Log::Init();
+	MX_CORE_INFO("Initialized Logger!");
+	
+	
+	auto app = Mixel::CreateApplication();
 	app->Run();
 	delete app;
 }
