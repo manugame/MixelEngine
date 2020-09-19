@@ -5,12 +5,11 @@ class Sandbox : public Mixel::Application
 public:
 	Sandbox()
 	{
-		
+	
 	}
 
 	~Sandbox()
 	{
-		
 	}
 
 	
@@ -19,4 +18,5 @@ public:
 Mixel::Application* Mixel::CreateApplication()
 {
 	return new Sandbox();
+
 }

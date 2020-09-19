@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Mixel/Log.h"
 
 
 #ifdef MX_PLATFORM_WINDOWS

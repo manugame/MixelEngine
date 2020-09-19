@@ -7,6 +7,12 @@
     <Filter Include="Mixel\Events">
       <UniqueIdentifier>{084A2416-F4AC-B3BA-9D32-EC7089747F3D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{797a8a87-74f4-40a6-8bcf-ec13b77389b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{4f43e623-c068-4163-ae9b-0fb03be6bd7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Mixel.h" />
@@ -35,6 +41,12 @@
       <Filter>Mixel</Filter>
     </ClInclude>
     <ClInclude Include="src\mxpch.h" />
+    <ClInclude Include="src\Mixel\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mixel\Window.h">
+      <Filter>Mixel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Mixel\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Mixel</Filter>
     </ClCompile>
     <ClCompile Include="src\mxpch.cpp" />
+    <ClCompile Include="src\Mixel\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

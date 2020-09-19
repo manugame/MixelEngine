@@ -10,6 +10,13 @@ workspace "MixelEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+
+IncludeDir["GLFW"] = "MixelEngine/vendor/GLFW/include"
+
+include "MixelEngine/vendor/GLFW"
+
+
 project "MixelEngine"
 	location "MixelEngine"
 	kind "SharedLib"
@@ -30,7 +37,14 @@ project "MixelEngine"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src/"
+		"%{prj.name}/src/",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
