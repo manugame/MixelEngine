@@ -41,7 +41,7 @@ namespace Mixel
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "MouseSCrolledEvent: " << m_XOffset << " C" << ", " << m_YOffset;
+			ss << "MouseSCrolledEvent: " << m_XOffset << ", " << m_YOffset;
 			return ss.str();
 		}
 

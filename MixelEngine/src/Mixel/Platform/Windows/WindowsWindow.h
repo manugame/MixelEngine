@@ -2,7 +2,6 @@
 
 #include "Mixel/Window.h"
 #include "GLFW/glfw3.h"
-
 namespace Mixel
 {
 	class MIXEL_API WindowsWindow : public Window

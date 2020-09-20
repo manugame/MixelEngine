@@ -7,11 +7,11 @@
     <Filter Include="Mixel\Events">
       <UniqueIdentifier>{084A2416-F4AC-B3BA-9D32-EC7089747F3D}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform">
-      <UniqueIdentifier>{797a8a87-74f4-40a6-8bcf-ec13b77389b2}</UniqueIdentifier>
+    <Filter Include="Mixel\Platform">
+      <UniqueIdentifier>{78F37C4C-64C1-7052-4D55-E17839C24CB7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\Windows">
-      <UniqueIdentifier>{4f43e623-c068-4163-ae9b-0fb03be6bd7e}</UniqueIdentifier>
+    <Filter Include="Mixel\Platform\Windows">
+      <UniqueIdentifier>{B2952248-9E8F-4B9A-87FC-E1AA7395B106}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,27 +37,39 @@
     <ClInclude Include="src\Mixel\Events\MouseEvent.h">
       <Filter>Mixel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Mixel\Layer.h">
+      <Filter>Mixel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mixel\LayerStack.h">
+      <Filter>Mixel</Filter>
+    </ClInclude>
     <ClInclude Include="src\Mixel\Log.h">
       <Filter>Mixel</Filter>
     </ClInclude>
-    <ClInclude Include="src\mxpch.h" />
     <ClInclude Include="src\Mixel\Platform\Windows\WindowsWindow.h">
-      <Filter>Platform\Windows</Filter>
+      <Filter>Mixel\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\Mixel\Window.h">
       <Filter>Mixel</Filter>
     </ClInclude>
+    <ClInclude Include="src\mxpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Mixel\Application.cpp">
       <Filter>Mixel</Filter>
     </ClCompile>
+    <ClCompile Include="src\Mixel\Layer.cpp">
+      <Filter>Mixel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mixel\LayerStack.cpp">
+      <Filter>Mixel</Filter>
+    </ClCompile>
     <ClCompile Include="src\Mixel\Log.cpp">
       <Filter>Mixel</Filter>
     </ClCompile>
-    <ClCompile Include="src\mxpch.cpp" />
     <ClCompile Include="src\Mixel\Platform\Windows\WindowsWindow.cpp">
-      <Filter>Platform\Windows</Filter>
+      <Filter>Mixel\Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\mxpch.cpp" />
   </ItemGroup>
 </Project>

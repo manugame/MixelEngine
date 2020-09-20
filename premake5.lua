@@ -13,8 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 
 IncludeDir["GLFW"] = "MixelEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "MixelEngine/vendor/Glad/include"
+
 
 include "MixelEngine/vendor/GLFW"
+include "MixelEngine/vendor/Glad"
 
 
 project "MixelEngine"
@@ -38,12 +41,14 @@ project "MixelEngine"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src/",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -55,7 +60,8 @@ project "MixelEngine"
 		defines
 		{
 			"MX_PLATFORM_WINDOWS",
-			"MX_BUILD_DLL"
+			"MX_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
@@ -65,14 +71,17 @@ project "MixelEngine"
 
 	filter "configurations:Debug"
 		defines "MX_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "MX_RELEASE"
+		buildoptions "/MDd"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "MX_DIST"
+		buildoptions "/MDd"
 		optimize "On"
 
 project "Sandbox"
@@ -112,12 +121,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "MX_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "MX_RELEASE"
+		buildoptions "/MDd"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "MX_DIST"
+		buildoptions "/MDd"
 		optimize "On" 
